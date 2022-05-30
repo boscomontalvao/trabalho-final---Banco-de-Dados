@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="/assets/styles/index.css">
+    <link rel="stylesheet" href="/assets/styles/modal/addModal.css">
+
+    <!-- icones -->
+    <script src="https://kit.fontawesome.com/e7b7438120.js" crossorigin="anonymous"></script>
+
+    <title>Central Do Tickets</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="neon-text">
+            <h1>Central Dos Tickets</h1>
+        </div>
+        <div class="ticket-image">
+            <img src="./static/images/ingressosNeon.png" alt="ingressos em neon">
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="container-header">
+                <h2>INGRESSOS VENDIDOS</h2>
+                <a href="events.html" data-link>Listar Eventos</a>
+            </div>
+
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>NÚMERO</th>
+                        <th>DESCRIÇÃO</th>
+                        <th>VALOR</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody id="tbody">
+                    <tr>
+                        <td class="ticketId"></td>
+                        <td class="ticketDescription"></td>
+                        <td class="ticketValue"></td>
+                        <td class="ticketButtonInfo"><button class="btn-add-tickets" id="infoButton">
+                                INFO
+                            </button>  
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+            
+            <!-- <template id="templateRow">
+                <tr>
+                    <td class="ticketId"></td>
+                    <td class="ticketDescription"></td>
+                    <td class="ticketValue"></td>
+                    <td class="ticketButtonInfo"><button class="btn-add-tickets" id="infoButton">
+                            INFO
+                        </button>  
+                    </td>
+                </tr>
+            </template> -->
+            
+            <div class="container-footer">
+                <button class="btn-add-tickets">Adicionar Ingresso</button>
+            </div>
+        </div>
+    </main>
+
+
+    <div id="modal">
+        <div class="modal">
+            <div class="modal-header">
+                    <h2>Adicionar Ingresso</h2>
+                    <button class="btn-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="modal-body">
+                <div class= "row">
+                    <div class="col">
+                        <label for="Events">Eventos</label>
+                        <select id="select-events">
+                            <option selected disabled>Selecione o Evento</option>
+                            <option value="">Teste</option>
+                            <option value="">teste </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="eventsDate">Data do Evento</label>
+                        <input type="date" name="eventsDate" id="eventsDate">
+                    </div>
+                    <div class="col">
+                        <label for="purchaseDate">Data da Compra</label>
+                        <input type="date" name="purchaseDate" id="purchaseDate">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="eventsLocal">Local</label>
+                        <input type="text" name="eventsLocal" id="eventsLocal" placeholder="Local do Evento">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="ticketsValue">Valor</label>
+                        <input type="text" name="ticketsValue" id="ticketsValue" placeholder="Valor do Ingresso">
+                    </div>
+                    <div class="col">
+                        <label for="buyerId">CPF</label>
+                        <input type="text" name="buyerId" id="buyerId" placeholder="CPF do Comprador">
+                    </div>
+                </div>
+                    <button id="add-ticket">Adicionar</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl<1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+</body>
+
+</html>
