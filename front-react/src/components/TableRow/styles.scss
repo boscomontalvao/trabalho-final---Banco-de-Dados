@@ -1,0 +1,42 @@
+td {
+    padding: .6rem;
+    text-align: center;
+    color: white;
+}
+
+td {
+    background-color: hsl(0, 1%, 32%); 
+    border-bottom: 10px solid hsl(0, 2%, 25%);
+
+}
+
+td:first-child {
+    width: 50%;
+    text-align: start;
+    border-radius: 7px 0 0 7px;
+    font-weight: 400;
+}
+
+td:nth-child(2) {
+    width: 30%;
+}
+
+td:last-child {
+    width: 20%;
+    border-radius: 0 7px 7px 0;
+}
+
+td button {
+    background-color: hsl(0, 4%, 22%);
+    border-radius: 0.5rem;
+    padding: .6rem 1rem;
+
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: hsl(0, 3%, 37%)
+}

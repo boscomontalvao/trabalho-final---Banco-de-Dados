@@ -1,0 +1,41 @@
+header {
+    background: linear-gradient(200deg, #04042b, hsl(0, 1%, 16%));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.8rem;
+    position: relative;
+
+
+    .neon-text {
+        display: flex;
+        padding: 1rem 4rem;
+        align-items: center;
+
+        border: 1px solid hsl(60, 95%, 42%);
+        box-shadow: 0 0 35px hsl(60, 95%, 42%), 0 0 15px hsl(60, 95%, 42%) inset;
+
+        
+        h1 {
+            position: relative;
+            font-size: 3.5rem;
+            letter-spacing: 20px;
+            font-weight: 700;
+            text-shadow: 0 0 10px hsl(288, 98%, 35%),
+                0 0 20px hsl(288, 98%, 35%),
+                0 0 40px hsl(288, 98%, 35%),
+                0 0 80px hsl(288, 98%, 35%),
+                0 0 160px hsl(288, 98%, 35%);
+        }
+    }
+
+    img {
+        width: 300px;
+        position: absolute;
+        top: -9px;
+        right: 0;
+        z-index: 2;
+        transform: rotate(1deg);
+    }
+}

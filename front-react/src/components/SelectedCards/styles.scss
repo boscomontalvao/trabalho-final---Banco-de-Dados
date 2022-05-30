@@ -1,0 +1,33 @@
+.selected-cards {
+    
+
+    .card {
+        position: relative;
+        background-color: hsl(0, 3%, 34%);
+
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 5rem;
+        height: 5rem;
+        margin: .5rem .5rem;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        box-shadow: 15px 10px 70px hsl(0, 0%, 8%);
+
+        button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: .3rem .4rem;
+
+            border: none;
+            cursor: pointer;
+
+            color: white;
+            background-color: transparent;
+        }
+    }
+
+}
